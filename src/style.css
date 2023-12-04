@@ -89,23 +89,29 @@ body {
 .task {
     font-weight: 600;
     padding: 1rem 1rem 1rem 0;
+    flex-grow: 1;
     /* border: 2px solid red; */
 }
 
-.list-ul button {
-    width: 80px;
-    border: 1px solid #000;
+.task-container{
+    margin:  0 auto;
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+.task-container button {
+    width: 70px;
+    border: 1px solid #333;
+    padding: .5rem .3rem;
     border-radius: 5px;
-    padding: .6rem 0;
-    margin-left: 1rem;
+    margin-left: .8rem;
     font-weight: 600;
     color: #fff;
 }
 
-.task img {
+.task-container img {
     max-width: 100%;
     width: 15px;
-
 }
 
 .done {
@@ -161,7 +167,6 @@ body {
 .no {
     background-color: #cc2727;
     margin-left: 1rem;
-
 }
 
 .clear {
@@ -183,11 +188,13 @@ body {
     }
     .input{
         width: 70%;
-      
     }
     .submit{
         display: inline-block;
-        /* margin-left:.9rem ; */
+        margin-left:.9rem ;
+    }
+    .task-container{
+    width: 65%;
     }
     .clear{
     left: 40%;

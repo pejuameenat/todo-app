@@ -51,12 +51,12 @@ function addTask(word) {
   // create a list tag and assign the input value as the text content in uppercase
   if (inputValue.value !== "") {
     word = inputValue.value;
+    const div = document.createElement('div')
+    div.classList.add('task-container')
     const list = document.createElement("li");
     list.classList.add("task");
     const textWord = word.toUpperCase();
     list.textContent = textWord;
-    textWord.padStart(25, ' ')
-    console.log(typeof textWord);
 
     //   create two images
     const image1 = document.createElement("img");
@@ -80,9 +80,9 @@ function addTask(word) {
       this.parentElement.remove();
     });
     // append it to li element
-    list.appendChild(button1);
-    list.appendChild(button2);
-    listContainer.appendChild(list);
+    div.append(list,button1, button2)
+    
+    listContainer.appendChild(div);
 
     // clear all tasks
     clearAll.addEventListener("click", function () {
