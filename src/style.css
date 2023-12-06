@@ -107,6 +107,8 @@ body {
     margin-left: .8rem;
     font-weight: 600;
     color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 .task-container img {
@@ -180,6 +182,11 @@ body {
     transform: translate(50%);
     border-radius: 7px;
     font-weight: 600;
+    transition: 400ms ease-in;
+}
+.clear:hover{
+    background-color: rgb(77, 197, 201);
+
 }
 @media only screen and (min-width: 800px){
     .input input{

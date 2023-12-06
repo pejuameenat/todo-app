@@ -89,7 +89,7 @@ function addTask(word) {
       modal.classList.remove("hide");
     });
     yesBtn.addEventListener("click", function () {
-      list.classList.add("hide");
+      div.classList.add("hide");
       modal.classList.add("hide");
     });
     noBtn.addEventListener("click", function () {
